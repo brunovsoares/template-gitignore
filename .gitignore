@@ -1,0 +1,32 @@
+# This is a template .gitignore file for git-managed WordPress projects.
+# Este é um template .gitignore para projetos wordpress.
+
+
+# Ignore everything in the root except the "wp-content" directory.
+#Ignora tudo exceto o diretório "wp-content".
+
+/*
+!.gitignore
+!wp-content/
+
+# Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
+# Ignora tudo exceto no diretório "wp-content" exceto os diretórios "plugins" e "themas"
+
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore everything in the "plugins" directory, except the plugins you
+# specify (see the commented-out examples for hints on how to do this.)
+
+# Ignora tudo exceto no diretório "plugins", exceto seu plugin específico
+
+wp-content/plugins/*
+# !wp-content/plugins/my-single-file-plugin.php
+# !wp-content/plugins/my-directory-plugin/
+
+# Ignore everything in the "themes" directory, except the themes you
+# Ignora tudo exceto no diretório "themes" exceto o seu tema
+
+wp-content/themes/*
+# !wp-content/themes/my-theme/
